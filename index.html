@@ -222,7 +222,7 @@
       document.body.style.backgroundImage = "url(MainBG.png)" ;
 
       // Настраиваем фон загрузочного экрана
-      loading_bg.style.backgroundColor = "#333333";
+      loading_bg.style.backgroundImage = "url(MainBG.png)" ;
 
       function setLoading(logoPositionTop, logoPositionLeft, logoWidth, logoHeight, positionTop, positionLeft, width, height, barColor, barFillColor, barBorder, barFillBorder, barBorderRadius, barFillBorderRadius, barBackgroundImage, barBackgroundSize) {
         // Указываем размер логотипа
@@ -475,14 +475,14 @@
                     }
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/igb_22.08.12.26.loader.js'
+                    unityLoader.src = 'Build/igb_22.08.13.40.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/igb_22.08.12.26.data.unityweb',
-                                frameworkUrl: 'Build/igb_22.08.12.26.framework.js.unityweb',
-                                codeUrl: 'Build/igb_22.08.12.26.wasm.unityweb',
+                                dataUrl: 'Build/igb_22.08.13.40.data.unityweb',
+                                frameworkUrl: 'Build/igb_22.08.13.40.framework.js.unityweb',
+                                codeUrl: 'Build/igb_22.08.13.40.wasm.unityweb',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'DefaultCompany',
                                 productName: 'Dvoechnik',
