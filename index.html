@@ -458,6 +458,9 @@
 
       let bridgeOptions = {
         platforms: {
+                    'vk_play': {
+                        gameId: '34477'
+                    },
           }
       }
 
@@ -475,14 +478,14 @@
                     }
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/igb_22.08.13.40.loader.js'
+                    unityLoader.src = 'Build/vk_play_23.08.2.00.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/igb_22.08.13.40.data.unityweb',
-                                frameworkUrl: 'Build/igb_22.08.13.40.framework.js.unityweb',
-                                codeUrl: 'Build/igb_22.08.13.40.wasm.unityweb',
+                                dataUrl: 'Build/vk_play_23.08.2.00.data.unityweb',
+                                frameworkUrl: 'Build/vk_play_23.08.2.00.framework.js.unityweb',
+                                codeUrl: 'Build/vk_play_23.08.2.00.wasm.unityweb',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'DefaultCompany',
                                 productName: 'Dvoechnik',
